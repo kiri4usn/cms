@@ -1,0 +1,347 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html{
+    zoom: 0.9;
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+}
+
+
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Apple SD Gothic Neo', 'roboto', sans-serif;
+    user-select: none !important;
+}
+
+body {
+    background: #f0f0f1;
+}
+
+.ver {
+    z-index: 1000000;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    color: white;
+    width: 160px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.goodalert{
+    width: 100%;
+    line-height: 40px;
+    background: rgb(0,124,186);
+    color: white;
+    text-align: center;
+}
+
+.goodalert p{
+    display: inline-block;
+    text-decoration:underline;
+}
+
+.erralert {
+    background: rgb(255, 34, 82) !important;
+    width: 100%;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+}
+
+.erralert p{
+    display: inline-block;
+    text-decoration:underline;
+}
+
+#adminbar {
+    color: #c3c4c7;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    line-height: 2.46153846em;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 600px;
+    z-index: 50;
+    background: linear-gradient(56deg, rgba(15,24,40,1) 0%, rgba(80,57,142,1) 100%);
+}
+
+#adminbar .usr{
+    position: fixed;
+    z-index: 51;
+    cursor: grab;
+    top: 0;
+    right: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 45px;
+    text-decoration: navajowhite;
+    text-transform: uppercase;
+
+}
+
+#adminbar p{
+    padding-left: 36px;
+    padding-right: 36px;
+    display: inline-block;
+    width: auto;
+    line-height: 45px;
+}
+
+#adminmenuback {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 45px;
+    width: 160px;
+    background: linear-gradient(56deg, rgba(15,24,40,1) 0%, rgba(22,27,50,1) 100%);
+    height: auto;
+    min-height: calc(100vw - 45px);
+    width: 160px;
+}
+
+#adminmenuback p{
+    color: white;
+    padding: 0 0 0 36px;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    line-height: 40px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+}
+
+#adminmenuback p:active{
+    color: white;
+    padding: 0 0 0 32px;
+    border-left: 4px solid #2271b1;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    width: 124px;
+    line-height: 40px;
+    background: rgba(255,255,255,0.2);
+}
+
+#adminmenuback p:hover{
+    color: white;
+    padding: 0 0 0 32px;
+    border-left: 4px solid #2271b1;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    line-height: 40px;
+    display: inline-block;
+    width: 124px;
+    background: rgba(255,255,255,0.1);
+}
+
+#content {
+    margin-top: 45px !important;
+    bottom: 0px;
+    height: 100vh !important;
+    margin-left: 160px !important;
+    width: calc(100% - 160px);
+}
+
+.pagename {
+    background: #fff;
+    padding: 20px 20px 20px 60px;
+    font-weight: 600;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.pagename a{
+    border: 1px solid rgb(0,124,186);
+    background: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    color:#5d5d5d;
+    padding: 2px 3px 2px 3px;
+    margin-left: 10px;
+    width: fit-content;
+    display: inline-block;
+}
+
+div #thisform {
+    background: #fff;
+    width: calc(100% - 80px);
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.infolabel {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+input{
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+table {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 10px;
+}
+
+.showOrNoshowDark {
+    background: #363636;
+    color: white;
+
+}
+
+.showOrNoshow:hover {
+    background: #fff;
+}
+
+.noshow {
+    visibility: hidden;
+    font-size: 12px;
+}
+
+.showOrNoshow:hover .noshow{
+    visibility: inherit;
+}
+
+.bluecol {
+    color: #2271b1;
+    display: inline-block;
+}
+
+.redcol {
+    color: rgb(255, 34, 82);
+    display: inline-block;
+}
+
+.greycol {
+    color: #5d5d5d;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.AbuttonRed{
+    border: 1px solid rgb(255, 34, 82);
+    background: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    color:#5d5d5d;
+    padding: 3px;
+    margin-left: 10px;
+    width: fit-content;
+    display: inline-block;
+}
+
+.AbuttonBlue{
+    border: 1px solid rgb(0,124,186);
+    background: #fff;
+    border-radius: 5px;
+    font-size: 12px;
+    color:#5d5d5d;
+    padding: 3px;
+    margin-left: 10px;
+    width: fit-content;
+    display: inline-block;
+}
+
+#toolbar {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    bottom: 0;
+    background: #000;
+    z-index: 2;
+}
+
+#toolbar *{
+    color:#fff;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 55px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#modal {
+    position: fixed;
+    z-index: 101;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    top:  30px;
+    right: 0;
+    text-align: center;
+    padding-top:40vh;
+}
+
+#modal .close{
+    background: #ff2e2e;
+    color: #fff;
+    width: 400px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#modal .alert{
+    background: #fff;
+    color: black;
+    width: 394px;
+    padding: 10px;
+    display: inline-block;
+    border: 3px solid #ff2e2e;
+    border-radius: 5px 5px 0 0;
+}
+
+#modal .close2{
+    background: rgb(0,124,186);
+    color: #fff;
+    width: 400px;
+    padding: 10px;
+    display: inline-block;
+}
+
+#modal .alert2{
+    background: #fff;
+    color: black;
+    width: 394px;
+    padding: 10px;
+    display: inline-block;
+    border: 3px solid rgb(0,124,186);
+    border-radius: 5px 5px 0 0;
+}
